@@ -1,0 +1,30 @@
+.breadcups {
+  &__content {
+    padding: 15px 0;
+  }
+  &__list {
+    display: flex;
+    gap: $gap-s;
+  }
+
+  &__elem {
+    position: relative;
+    color: $main-grey-dark;
+    font-size: $font-size-s;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      display: block;
+      width: 1px;
+      height: 14px;
+      background-color: $main-grey-dark;
+    }
+
+    &:first-child::before {
+      content: '';
+      display: none;
+    }
+  }
+}

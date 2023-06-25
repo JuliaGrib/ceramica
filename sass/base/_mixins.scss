@@ -1,0 +1,15 @@
+@mixin flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin burger-line {
+  width: 1.5rem;
+  height: 0.1rem;
+  background-color: $main-color;
+}
+
+@mixin burger-menu-elem-line {
+  border-bottom: 1px solid $main-grey-dark;
+}

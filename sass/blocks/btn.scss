@@ -1,0 +1,60 @@
+.btn {
+  display: block;
+  padding: $padding-m $padding-xxl;
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+
+  @media screen and (max-width: 1024px) {
+    padding: $padding $padding-l;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: $padding $padding;
+  }
+
+  &_banner-primary {
+    background-color: $main-white;
+    color: $main-color;
+    font-weight: 600;
+
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 660px) {
+      font-size: 14px;
+    }
+  }
+
+  &_banner-secondary {
+    border: 1px solid $main-white;
+    color: $main-white;
+    font-weight: 600;
+
+    @media screen and (max-width: 1024px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 660px) {
+      font-size: 14px;
+    }
+  }
+
+  &_about {
+    background-color: $main-color;
+    color: $main-white;
+
+    @media screen and (max-width: 475px) {
+      margin: 0 auto;
+    }
+  }
+
+  &_question {
+    display: flex;
+    align-items: center;
+    padding: $padding-s $padding-l;
+    gap: $gap-xs;
+    background-color: $main-color;
+    color: $main-white;
+    font-size: $font-size-s;
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  &__content {
+    display: grid;
+    grid-template-columns: 10rem 1fr 6rem auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding-m 0;
+    gap: $gap-l;
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: auto 1fr auto auto;
+    }
+    @media screen and (max-width: 660px) {
+      grid-template-columns: 1fr auto auto;
+      gap: $gap-l;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 670px) {
+      display: none;
+    }
+  }
+}

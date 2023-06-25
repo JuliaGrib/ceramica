@@ -1,0 +1,36 @@
+.link {
+  text-decoration: none;
+  color: $main-black;
+
+  &_list {
+    transition: 0.5s color;
+    padding: $padding 0;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: $font-size-s;
+    }
+  }
+
+  &_list-mob {
+    color: $main-color;
+  }
+
+  &_sublist {
+    font-size: $font-size-s;
+    line-height: 1.2rem;
+    transition: 0.5s;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  &_sublist-mob {
+    padding-left: $padding-xxxl;
+    color: $main-white;
+  }
+}

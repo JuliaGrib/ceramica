@@ -1,0 +1,154 @@
+.offers {
+  background-color: #f9f9f9;
+  background-image: url(../img/bg/bg_feature.png);
+
+  &__content {
+    padding: 100px 0;
+
+    @media screen and (max-width: 1440px) {
+      margin-bottom: 0px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 60px 0;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-s;
+  }
+
+  &__variants {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 25vw);
+    grid-row-gap: 50px;
+    justify-content: space-between;
+    margin: 100px 0 0 0;
+
+    @media screen and (max-width: 1370px) {
+      grid-template-columns: repeat(2, auto);
+      grid-column-gap: 50px;
+      margin: 50px 0 0 0;
+    }
+
+    @media screen and (max-width: 660px) {
+      grid-template-columns: auto;
+    }
+  }
+
+  &__elem {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: $gap;
+    text-align: right;
+
+    &:nth-child(even) {
+      text-align: left;
+    }
+    @media screen and (max-width: 1370px) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    width: 18vw;
+
+    &:nth-child(even) {
+      text-align: left;
+    }
+
+    @media screen and (max-width: 1190px) {
+      width: 30vw;
+    }
+    @media screen and (max-width: 768px) {
+      width: 70vw;
+    }
+  }
+
+  &__descr {
+    font-size: $font-size;
+    color: $main-grey-dark;
+    line-height: 26px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 20px;
+    border-radius: 50px;
+
+    @media screen and (max-width: 660px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    img {
+      @media screen and (max-width: 660px) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 507px;
+
+    @media screen and (max-width: 1700px) {
+      width: 400px;
+    }
+
+    @media screen and (max-width: 1370px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__circle-mob {
+    display: flex;
+
+    @media screen and (max-width: 1370px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+  }
+
+  &__circle-content {
+    position: relative;
+    width: 35vw;
+  }
+  &__circle-img {
+    width: 100%;
+  }
+}
+
+.test {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 33vw;
+  display: none;
+
+  &_active {
+    display: block;
+  }
+}

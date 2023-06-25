@@ -1,0 +1,55 @@
+// .teeth {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 500px;
+
+//   @media screen and (max-width: 1700px) {
+//     width: 400px;
+//   }
+
+//   @media screen and (max-width: 1370px) {
+//     display: none;
+//   }
+
+//   &__img {
+//     width: 100%;
+//   }
+// }
+
+.teeth {
+  background-image: url(../img/bg/circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 1190px) {
+    order: -1;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 300px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 250px;
+  }
+
+  &__img {
+    position: relative;
+    width: 100%;
+    top: 0px;
+    display: none;
+    &_active {
+      display: block;
+    }
+  }
+}

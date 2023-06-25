@@ -1,0 +1,60 @@
+.sidebar {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+  &__elem {
+    position: relative;
+    padding: $padding-l $padding;
+    background-color: $main-grey-light;
+    border-bottom: 1px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    &:after {
+      content: '';
+      background: url(../img/icons/arrow_down.svg) no-repeat 0 0;
+      position: absolute;
+      display: block;
+      top: 30px;
+      width: 14px;
+      height: 16px;
+      right: 15px;
+      background-size: contain;
+    }
+
+    &_active:after {
+      background: url(../img/icons/arrow_up.svg) no-repeat 0 0;
+    }
+  }
+
+  &__sublist {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid $main-grey-light;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+
+    &_active {
+      display: flex;
+    }
+  }
+  &__subelem {
+    padding: $padding $padding-l;
+    border-bottom: 1px solid $main-grey-light;
+    cursor: pointer;
+
+    &:hover {
+      color: $main-color;
+    }
+
+    &_active {
+      color: $main-color;
+    }
+  }
+}
