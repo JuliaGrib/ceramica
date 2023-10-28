@@ -1,0 +1,11 @@
+.main-form {
+  margin-top: $padding-section;
+  padding-top: $padding-section;
+  padding-bottom: $padding-section;
+  background-color: $main-color;
+  color: white;
+
+  &__img {
+    border-radius: 8px;
+  }
+}

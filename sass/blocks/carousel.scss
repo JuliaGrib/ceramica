@@ -1,37 +1,142 @@
 .carousel {
-  &__elem {
-    width: 100%;
+  padding-top: $padding-section;
+
+  &_bottom {
+    padding-bottom: $padding-section;
+  }
+
+  &__item {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    gap: $gap-s;
-    align-items: center;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: $border-radius;
+    font-size: 16px;
+    transition: $transition;
 
-    @media screen and (max-width: 768px) {
-      align-items: center;
+    &:hover {
+      -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+      box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+      color: black;
     }
 
-    img {
-      width: 85%;
+    @media screen and (max-width: 767px) {
+      padding: 10px;
+    }
 
-      @media screen and (max-width: 768px) {
-        width: 80%;
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 375px) {
+      padding: 5px;
+    }
+
+    &-img {
+      width: 100%;
+    }
+
+    &-title {
+      margin: 0;
+    }
+
+    &-price {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+
+      &-through {
+        color: rgba(0, 0, 0, 0.61);
+        font-size: 14px;
+        text-decoration: line-through;
+
+        @media screen and (max-width: 500px) {
+          font-size: 12px;
+        }
       }
+
+      &-main {
+        &_sale {
+          color: $red-color;
+        }
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+      border: 1px solid $main-color;
+      border-radius: $border-radius;
+      outline: none;
+      background-color: rgba($color: #000000, $alpha: 0);
+      color: $main-color;
+      transition: $transition;
+
+      &_sale {
+        border: 1px solid $red-color;
+        background-color: rgba($color: #000000, $alpha: 0);
+        color: $red-color;
+      }
+    }
+
+    &:hover .carousel__item-btn {
+      background-color: $main-color;
+      color: white;
+    }
+
+    &:hover .carousel__item-btn_sale {
+      background-color: $red-color;
+      color: white;
     }
   }
 }
 
-.slick-arrow {
-  position: absolute;
-  top: 45%;
-  transform: translateY(-45%);
-  z-index: 1000;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-  -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
-  border-radius: 50px;
+.carousel-slider {
+  position: relative;
 }
 
-.slick-next {
-  right: 0;
+.carousel-slider_info {
+  position: relative;
+}
+
+.carousel-slider__prev,
+.carousel-slider__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.carousel-slider__prev {
+  left: -10px;
+}
+
+.carousel-slider__next {
+  right: -10px;
+}
+
+.carousel-slider .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-slider_info .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
