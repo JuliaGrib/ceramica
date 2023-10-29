@@ -1,39 +1,29 @@
 .header {
-  &__menu-1 {
-    &::before {
-    }
-  }
   &__menu-info {
     padding: 0;
     list-style: none;
 
     &-link {
       font-size: 14px;
-      color: $light-grey;
+      color: rgba(0, 0, 0, 0.61);
     }
   }
   &__menu-social {
     list-style: none;
 
     &-link svg {
-      transition: $transition;
+      transition: 0.4s;
       color: #ababab;
       &:hover {
-        color: $main-color;
+        color: #6558fb;
       }
-    }
-  }
-
-  &__card {
-    &-icon {
-      // color: black;
     }
   }
 
   &__line {
     width: 100%;
     height: 1px;
-    background-color: $main-color;
+    background-color: #6558fb;
   }
 
   &__menu-catalog {
@@ -43,10 +33,10 @@
     &-elem {
       padding: 10px;
       text-align: center;
-      background-color: $main-color;
-      color: white;
+      background-color: rgba(185, 205, 206, 0.36);
+      color: black;
       // border: 1px solid $main-color;
-      transition: $transition;
+      transition: 0.4s;
       cursor: pointer;
 
       &:hover {
@@ -58,10 +48,10 @@
   }
 
   &_link {
-    transition: $transition;
+    transition: 0.4s;
 
     &:hover {
-      color: $main-color-dark;
+      color: #6558fb;
     }
   }
 }
@@ -82,10 +72,10 @@
   transform: translateY(-50%);
   z-index: 1;
   cursor: pointer;
-  transition: $transition;
+  transition: 0.4s;
 
   &:hover {
-    color: $main-color;
+    color: #6558fb;
   }
 }
 

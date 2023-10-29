@@ -1,0 +1,63 @@
+.sale {
+  padding: 60px 0;
+  background-color: rgb(185 205 206 / 36%);
+
+  &__elem {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 97%;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 767px) {
+      flex-direction: row;
+    }
+
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    width: 211px;
+    height: 170px;
+    border-radius: 7px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__title {
+    font-size: 18px;
+    height: 40%;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__subtitle {
+    padding: 0;
+    margin: 0;
+    height: 40%;
+  }
+
+  &__date {
+    color: rgba(0, 0, 0, 0.61);
+  }
+}
+
+.sale-slider .slick-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
