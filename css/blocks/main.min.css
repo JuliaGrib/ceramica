@@ -1,1 +1,1 @@
-a{text-decoration:none;color:#000}.container-overflow{width:100%;overflow:hidden}
+body{overflow-x:hidden}a{text-decoration:none;color:#000}ul{margin:0;padding:0;list-style-type:none}.container-overflow{width:100%;overflow:hidden}h2{font-size:30px;padding-bottom:30px}.btn{max-width:160px;display:flex;align-items:center;justify-content:center;padding:10px 0;background-color:#fff}.btn:hover{background-color:#6558fb;color:#fff}.btn_about{margin:20px 0 0 0}

@@ -9,6 +9,8 @@ a {
 
 ul {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .container-overflow {
@@ -18,7 +20,7 @@ ul {
 
 h2 {
   font-size: 30px;
-  padding-bottom: $padding-title-section;
+  padding-bottom: 30px;
 }
 
 .btn {
@@ -30,7 +32,7 @@ h2 {
   background-color: white;
 
   &:hover {
-    background-color: $main-color-dark;
+    background-color: #6558fb;
     color: white;
   }
 
