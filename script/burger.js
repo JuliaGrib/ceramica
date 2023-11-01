@@ -1,5 +1,5 @@
 const burgerBtn = document.querySelector('.burger__btn');
-const burgerMenu = document.querySelector('.header__burger-menu');
+const burgerMenu = document.querySelector('.burger-menu');
 
 // const burgerLine = document.querySelector('.burger__line');
 // const menuListNodes = document.querySelector('.list_header').childNodes;
@@ -11,11 +11,11 @@ burgerBtn.addEventListener('click', menuShowHide);
 
 function menuShowHide() {
   burgerBtn.classList.toggle('burger__btn_active');
-  burgerMenu.classList.toggle('header__burger-menu_active');
+  burgerMenu.classList.toggle('burger-menu_active');
   // burgerLine.classList.toggle('burger_active');
   // menuNode.classList.toggle('menu-mob_active');
   // background.classList.toggle('background_active');
-  // document.querySelector('html').classList.toggle('overflow');
+  document.querySelector('html').classList.toggle('overflow');
 }
 
 const allBtn = document.querySelectorAll('.btn');
