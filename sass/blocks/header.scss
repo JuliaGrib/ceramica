@@ -1,4 +1,8 @@
 .header {
+  position: relative;
+  z-index: 1000;
+  background-color: white;
+
   &__menu-info {
     padding: 0;
     list-style: none;
@@ -53,6 +57,43 @@
     &:hover {
       color: #6558fb;
     }
+  }
+
+  &__burger-menu {
+    position: absolute;
+    z-index: 999;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    background: white;
+    height: 100vh;
+    background-color: #f0f0f0;
+    background-color: #e6eded;
+    transition: 0.6s;
+
+    &_active {
+      top: 75px;
+    }
+  }
+
+  &__burger-menu-elem {
+    padding: 15px 0;
+    font-size: 18px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: white;
+      bottom: 0;
+    }
+  }
+
+  &__burger-menu-info {
+    font-size: 18px;
   }
 }
 

@@ -1,1 +1,1 @@
-.btn{display:flex;align-items:center;justify-content:center;padding:10px 0;background-color:#fff}
+.btn{display:flex;align-items:center;justify-content:center;padding:10px 0}.btn:hover{border-color:rgba(255,255,255,0)}.btn_white{background-color:#fff}.btn_white:hover{background-color:#6558fb}.btn_min{max-width:200px}@media screen and (max-width:992px){.btn_min{margin:0 auto}}@media screen and (max-width:767px){.btn_min{margin:0 auto;max-width:100%}}.btn_send{background-color:#6558fb;color:#fff}.btn_send:hover{background-color:#4738ea;color:#fff}
