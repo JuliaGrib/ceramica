@@ -4,5 +4,47 @@
   justify-content: center;
   padding: 10px 0;
 
-  background-color: white;
+  &:hover {
+    border-color: rgba(255, 255, 255, 0);
+  }
 }
+
+.btn_white {
+  background-color: white;
+
+  &:hover {
+    background-color: #6558fb;
+  }
+}
+
+.btn_min {
+  max-width: 200px;
+
+  @media screen and (max-width: 992px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
+.btn_send {
+  background-color: #6558fb;
+  color: white;
+
+  &:hover {
+    background-color: #4738ea;
+    color: white;
+  }
+}
+
+// .btn_send {
+//   background-color: rgba(185, 205, 206, 0.36);
+
+//   &:hover {
+//     color: white;
+//     background-color: #6558fb;
+//   }
+// }

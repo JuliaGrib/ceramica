@@ -22,21 +22,3 @@ h2 {
   font-size: 30px;
   padding-bottom: 30px;
 }
-
-.btn {
-  max-width: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0;
-  background-color: white;
-
-  &:hover {
-    background-color: #6558fb;
-    color: white;
-  }
-
-  &_about {
-    margin: 20px 0 0 0;
-  }
-}
