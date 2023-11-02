@@ -1,9 +1,35 @@
 .footer {
-  padding: 60px;
+  padding: 60px 0;
   background-color: rgba(185, 205, 206, 0.36);
 
   .header__menu-social {
     padding: 0;
+  }
+
+  &__contact-elem {
+    svg {
+      color: $black-color;
+      transition: $transition-s;
+    }
+    &:hover svg {
+      color: $secondary-color;
+    }
+  }
+
+  &__adress {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+
+    svg {
+      color: $black-color;
+      transition: $transition-s;
+      width: 26px;
+    }
+    &:hover svg {
+      color: $secondary-color;
+    }
   }
 
   ul {
