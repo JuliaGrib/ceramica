@@ -12,17 +12,6 @@
       color: $light-grey;
     }
   }
-  &__menu-social {
-    list-style: none;
-
-    &-link svg {
-      transition: $transition-s;
-      color: #ababab;
-      &:hover {
-        color: $secondary-color;
-      }
-    }
-  }
 
   &__card-icon {
     color: $black-color;

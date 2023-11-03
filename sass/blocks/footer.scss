@@ -2,8 +2,16 @@
   padding: 60px 0;
   background-color: rgba(185, 205, 206, 0.36);
 
+  @media screen and (max-width: 575px) {
+    padding: 60px 60px;
+  }
+
   .header__menu-social {
     padding: 0;
+  }
+
+  &__contact-adress {
+    max-width: 440px;
   }
 
   &__contact-elem {
@@ -30,11 +38,5 @@
     &:hover svg {
       color: $secondary-color;
     }
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 }
