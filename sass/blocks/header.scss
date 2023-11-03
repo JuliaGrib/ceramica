@@ -1,7 +1,7 @@
 .header {
   position: relative;
   z-index: 1000;
-  background-color: white;
+  background-color: $white-color;
 
   &__menu-info {
     padding: 0;
@@ -9,122 +9,84 @@
 
     &-link {
       font-size: 14px;
-      color: rgba(0, 0, 0, 0.61);
-    }
-  }
-  &__menu-social {
-    list-style: none;
-
-    &-link svg {
-      transition: 0.4s;
-      color: #ababab;
-      &:hover {
-        color: #6558fb;
-      }
+      color: $light-grey;
     }
   }
 
-  &__line {
-    width: 100%;
-    height: 1px;
-    background-color: #6558fb;
+  &__card-icon {
+    color: $black-color;
+    transition: $transition-s;
   }
 
-  &__menu-catalog {
+  &__catalog {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     margin: 0;
-    background-color: rgb(207, 207, 207);
+  }
 
-    &-elem {
-      position: relative;
-      padding: 10px;
-      text-align: center;
-      background-color: #e6eded;
-      color: black;
-      cursor: pointer;
+  &__catalog-elem {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    background-color: $main-color;
 
-      &:hover {
-        background-color: white;
-        color: black;
-        -webkit-box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
-        -moz-box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
-        box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
-      }
-    }
+    cursor: pointer;
 
-    &-subelem {
-      display: none;
-      min-width: 185px;
-      top: 44px;
-      left: 0px;
-      position: absolute;
-
-      background-color: white;
-      text-align: left;
-
+    &:hover {
+      background-color: $white-color;
+      color: $black-color;
       -webkit-box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
       -moz-box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
       box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
+    }
+  }
 
-      &_last {
-        right: 0;
-        left: auto;
-      }
+  &__catalog-subelem {
+    display: none;
+    min-width: 185px;
+    top: 44px;
+    left: 0px;
+    position: absolute;
 
-      ul {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-      }
+    background-color: $white-color;
+    text-align: left;
 
-      li {
-        padding: 15px;
-        &:hover {
-          background-color: #e6eded;
-        }
+    -webkit-box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 63px -4px rgba(34, 60, 80, 0.2);
+
+    &_last {
+      right: 0;
+      left: auto;
+    }
+
+    ul {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    li {
+      padding: 15px;
+      &:hover {
+        background-color: $main-color;
       }
     }
   }
 
   &_link {
-    transition: 0.4s;
+    transition: $transition-s;
 
     &:hover {
-      color: #6558fb;
+      color: $secondary-color;
     }
   }
 }
 
-.test {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+.header__card:hover > svg {
+  color: $secondary-color;
 }
 
-.your-class {
-  position: relative;
-}
-
-.banner-prev,
-.banner-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
-  transition: 0.4s;
-
-  &:hover {
-    color: #6558fb;
-  }
-}
-
-.banner-prev {
-  left: 20px;
-}
-
-.banner-next {
-  right: 20px;
-}
-
-.header__menu-catalog-elem:hover > .header__menu-catalog-subelem {
+.header__catalog-elem:hover > .header__catalog-subelem {
   display: block;
 }

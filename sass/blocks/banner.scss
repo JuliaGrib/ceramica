@@ -1,0 +1,25 @@
+.banner-slider {
+  position: relative;
+}
+
+.banner-prev,
+.banner-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  transition: $transition-s;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.banner-prev {
+  left: 20px;
+}
+
+.banner-next {
+  right: 20px;
+}

@@ -1,0 +1,11 @@
+.social {
+  list-style: none;
+
+  &__link svg {
+    transition: $transition-s;
+    color: #ababab;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
