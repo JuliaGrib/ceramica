@@ -74,10 +74,23 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  &__wrap {
+    padding: 16px;
+  }
+
+  &__input {
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+  }
 }
 
 .show-filter,
-.show-categories {
+.show-categories,
+.reset-filter {
   font-size: 14px;
   background-color: white;
   padding: 8px;
@@ -87,12 +100,26 @@
   border-radius: 6px;
   border: 0.8px solid rgb(222, 226, 230);
   cursor: pointer;
+  transition: $transition-s;
+}
+
+.reset-filter:hover {
+  background-color: $main-color;
 }
 
 .active-filter {
-  background-color: #e6eded85;
+  background-color: #e6eded;
 }
 
 .no-overflow {
   display: block;
+}
+
+.form-range::-webkit-slider-thumb {
+  background-color: $secondary-color;
+}
+
+.form-check-input:checked {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
 }

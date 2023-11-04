@@ -430,13 +430,29 @@
                       aria-labelledby="panelsStayOpen-headingOne"
                     >
                       <div class="accordion-body">
-                        <ul class="categories__list">
-                          <li class="categories__elem">
-                            <a href="#" class="categories__link"
-                              >Гранитные подступени</a
-                            >
-                          </li>
-                        </ul>
+                        <div class="filter__wrap">
+                          <div
+                            class="d-flex gap-1 justify-content-between align-items-center"
+                          >
+                            <div class="filter__input">
+                              <input type="text" placeholder="0" />
+                            </div>
+                            <span>—</span>
+                            <div class="filter__input">
+                              <input type="text" placeholder="100 000" />
+                            </div>
+                          </div>
+                          <div class="mt-3">
+                            <input
+                              type="range"
+                              class="form-range"
+                              min="0"
+                              max="5"
+                              step="0.5"
+                              id="customRange3"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -459,13 +475,41 @@
                       aria-labelledby="panelsStayOpen-headingTwo"
                     >
                       <div class="accordion-body">
-                        <ul class="categories__list">
-                          <li class="categories__elem">
-                            <a href="#" class="categories__link"
-                              >Гранитные подступени</a
-                            >
-                          </li>
-                        </ul>
+                        <div class="filter__wrap">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="blue"
+                              id="blue"
+                            />
+                            <label class="form-check-label" for="blue">
+                              Синий
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="red"
+                              id="red"
+                            />
+                            <label class="form-check-label" for="red">
+                              Красный
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="green"
+                              id="green"
+                            />
+                            <label class="form-check-label" for="green">
+                              Зеленый
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -491,17 +535,46 @@
                       aria-labelledby="panelsStayOpen-headingThree"
                     >
                       <div class="accordion-body">
-                        <ul class="categories__list">
-                          <li class="categories__elem">
-                            <a href="#" class="categories__link"
-                              >Гранитные подступени</a
-                            >
-                          </li>
-                        </ul>
+                        <div class="filter__wrap">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="russia"
+                              id="russia"
+                            />
+                            <label class="form-check-label" for="russia">
+                              Россия
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="kazahstan"
+                              id="kazahstan"
+                            />
+                            <label class="form-check-label" for="kazahstan">
+                              Казахстан
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              value="china"
+                              id="china"
+                            />
+                            <label class="form-check-label" for="china">
+                              Китай
+                            </label>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="reset-filter mt-2">Сбросить фильтр</div>
               </div>
             </div>
           </div>
