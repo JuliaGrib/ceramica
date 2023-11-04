@@ -5,10 +5,6 @@
 }
 
 .categories {
-  -webkit-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
-  -moz-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
-  box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
-
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -76,9 +72,6 @@
 }
 
 .filter {
-  -webkit-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
-  -moz-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
-  box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -109,10 +102,6 @@
   border: 0.8px solid rgb(222, 226, 230);
   cursor: pointer;
   transition: $transition-s;
-
-  -webkit-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
-  -moz-box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
-  box-shadow: 0px 1px 10px 2px rgba(34, 60, 80, 0.05);
 }
 
 .reset-filter:hover {
