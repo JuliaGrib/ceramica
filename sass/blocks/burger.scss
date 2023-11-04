@@ -150,47 +150,46 @@
   }
 }
 
-.header__burger-menu .accordion {
+.burger-menu .accordion {
   background-color: #e6eded85;
 }
-
-.accordion,
-.accordion-item,
-#accordionFlushExample,
-.burger-menu__accordion {
+.burger-menu .accordion,
+.burger-menu .accordion-item,
+.burger-menu #accordionFlushExample,
+.burger-menu .burger-menu__accordion {
   background-color: #e6eded;
 }
 
-.accordion,
-.accordion-button {
+.burger-menu .accordion,
+.burger-menu .accordion-button {
   background-color: #e6eded;
 }
 
-.accordion-header {
+.burger-menu .accordion-header {
   padding: 0;
   font-size: 18px;
 }
 
-.accordion-body {
+.burger-menu .accordion-body {
   background-color: white;
   padding: 0;
 }
 
-.accordion-button {
+.burger-menu .accordion-button {
   padding: 15px 15px;
   font-size: 18px;
 }
-.accordion-button:not(.collapsed) {
+.burger-menu .accordion-button:not(.collapsed) {
   background-color: #e6eded;
   color: black;
   padding: 15px 15px;
 }
 
-.accordion-button:not(.collapsed)::after {
+.burger-menu .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-icon);
 }
 
-.accordion-button:focus {
+.burger-menu .accordion-button:focus {
   z-index: 3;
   border-color: none;
   outline: 0;
