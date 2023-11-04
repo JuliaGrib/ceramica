@@ -40,6 +40,7 @@
 }
 
 .catalog .accordion-button {
+  background-color: $main-color;
   @media screen and (max-width: 992px) {
     font-size: 14px;
   }
@@ -71,7 +72,7 @@
 }
 
 .catalog .categories .accordion-body {
-  background-color: #e6eded6c;
+  background-color: white;
 }
 
 .filter {
@@ -99,7 +100,7 @@
 .show-categories,
 .reset-filter {
   font-size: 14px;
-  background-color: white;
+  background-color: $main-color;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -119,7 +120,7 @@
 }
 
 .active-filter {
-  background-color: #e6eded;
+  background-color: #dee2e6;
 }
 
 .no-overflow {
