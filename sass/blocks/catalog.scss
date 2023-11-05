@@ -2,6 +2,33 @@
   &__title {
     padding-bottom: 16px;
   }
+
+  &__panel {
+    padding: 14px 16px;
+    background-color: $main-color;
+    border-radius: 6px;
+    border: 0.8px solid rgb(222, 226, 230);
+
+    @media screen and (max-width: 767px) {
+      padding: 8px 10px;
+    }
+
+    .form-select {
+      background-color: $main-color;
+      // border: none;
+      width: auto;
+    }
+    .form-select-sm {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .form-select:focus {
+      border-color: #9c86fe;
+      outline: 0;
+      box-shadow: 0 0 0 0.25rem rgba(101, 13, 253, 0.25);
+    }
+  }
 }
 
 .categories {
@@ -123,4 +150,28 @@
 .form-check-input:checked {
   background-color: $secondary-color;
   border-color: $secondary-color;
+}
+
+.goods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-row-gap: 10px;
+
+  @media screen and (max-width: 1399px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 1199px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (max-width: 991px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media screen and (max-width: 472px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
