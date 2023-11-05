@@ -11,12 +11,19 @@
 
     @media screen and (max-width: 767px) {
       padding: 8px 10px;
+      background-color: white;
+      border: none;
+      padding: 8px 0;
     }
 
     .form-select {
       background-color: $main-color;
       // border: none;
       width: auto;
+
+      @media screen and (max-width: 767px) {
+        background-color: white;
+      }
     }
     .form-select-sm {
       padding-top: 0;
