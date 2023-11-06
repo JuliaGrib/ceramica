@@ -25,7 +25,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.carousel-slider').slick({
     infinite: true,
-    slidesToShow: 6,
+    slidesToShow: 5,
 
     slidesToScroll: 1,
     prevArrow: `<svg class="carousel-slider__prev" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,13 +40,13 @@ $(document).ready(function () {
       {
         breakpoint: 1199,
         settings: {
-          slidesToShow: 5,
+          slidesToShow: 4,
         },
       },
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 2,
           arrows: false,
           dots: true,

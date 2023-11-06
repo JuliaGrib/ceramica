@@ -48,3 +48,14 @@
 //     background-color: #6558fb;
 //   }
 // }
+
+.btn_card {
+  background-color: white;
+  color: $black-color;
+  border: 1px solid $secondary-color;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: white;
+  }
+}
