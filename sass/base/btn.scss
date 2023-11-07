@@ -59,3 +59,22 @@
     color: white;
   }
 }
+
+.btn_card-detail {
+  margin: 0;
+  padding: 10px 40px;
+  background-color: #6558fb;
+  color: white;
+
+  &:hover {
+    background-color: #4738ea;
+    color: white;
+  }
+}
+
+.btn_card-detail-add {
+  margin: 0;
+  background-color: white;
+  color: $black-color;
+  border: 1px solid $secondary-color;
+}
