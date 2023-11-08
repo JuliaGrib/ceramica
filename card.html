@@ -331,14 +331,23 @@
                       <div
                         class="d-flex gap-xl-3 gap-3 flex-column flex-md-row"
                       >
-                        <a href="#" class="btn btn_min btn_card-detail"
-                          >Заказать</a
-                        >
-                        <a
-                          href="#"
+                        <button
                           class="btn btn_min btn_card-detail btn_card-detail-add"
-                          >В корзину</a
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal"
                         >
+                          Заказать
+                        </button>
+
+                        <button
+                          class="btn btn_min btn_card-detail"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal2"
+                        >
+                          В корзину
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -1015,6 +1024,215 @@
                 </div>
                 <a href="#" class="btn btn_send">Отправить</a>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body card-detail__modal">
+            <div class="card-detail__modal-goods">
+              <div class="card-detail__modal-elem">
+                <div class="row">
+                  <div class="col-2">
+                    <img
+                      class="card-detail__modal-img"
+                      src="./img/sale/2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-10">
+                    <div
+                      class="h-100 d-flex flex-column justify-content-between gap-3"
+                    >
+                      <div class="w-100 d-flex justify-content-between">
+                        <div class="card-detail__modal-title">
+                          Гранитная плитка Белла Вайт G603 600*300*18 полировка
+                        </div>
+                        <a href="#" class="card-detail__modal-del">
+                          <svg
+                            width="18"
+                            height="20"
+                            viewBox="0 0 18 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.26875 19.7125C2.71042 19.7125 2.23417 19.5158 1.84 19.1225C1.44667 18.7292 1.25 18.2529 1.25 17.6938V2.2125H0V0.9625H5V0H12.5V0.9625H17.5V2.2125H16.25V17.6938C16.25 18.2688 16.0575 18.7488 15.6725 19.1338C15.2867 19.5196 14.8063 19.7125 14.2313 19.7125H3.26875ZM15 2.2125H2.5V17.6938C2.5 17.9179 2.57208 18.1021 2.71625 18.2463C2.86042 18.3904 3.04458 18.4625 3.26875 18.4625H14.2313C14.4229 18.4625 14.5992 18.3825 14.76 18.2225C14.92 18.0617 15 17.8854 15 17.6938V2.2125ZM6.01 15.9625H7.26V4.7125H6.01V15.9625ZM10.24 15.9625H11.49V4.7125H10.24V15.9625Z"
+                              fill="#333333"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div
+                        class="w-100 d-flex justify-content-between align-items-center"
+                      >
+                        <div class="card-detail__modal-price d-none d-md-block">
+                          3 970 ₽ за м²
+                        </div>
+                        <div class="d-flex align-items-center gap-3 gap-lg-5">
+                          <div
+                            class="d-flex gap-1 gap-lg-3 align-items-center card-detail__modal-count"
+                          >
+                            <a href="">
+                              <svg
+                                width="15"
+                                height="3"
+                                viewBox="0 0 15 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M15 3H0V0H15V3Z" fill="#333333" />
+                              </svg>
+                            </a>
+                            <input
+                              type="number"
+                              class="form-control"
+                              value="1"
+                            />
+
+                            <a href="">
+                              <svg
+                                width="15"
+                                height="14"
+                                viewBox="0 0 15 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M15 8H8.57143V14H6.42857V8H0V6H6.42857V0H8.57143V6H15V8Z"
+                                  fill="#333333"
+                                />
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="card-detail__modal-general-price">
+                            3 970 ₽
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-detail__modal-elem">
+                <div class="row">
+                  <div class="col-2">
+                    <img
+                      class="card-detail__modal-img"
+                      src="./img/sale/1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-10">
+                    <div
+                      class="h-100 d-flex flex-column justify-content-between gap-3"
+                    >
+                      <div class="w-100 d-flex justify-content-between">
+                        <div class="card-detail__modal-title">
+                          Гранитная плитка Белла Вайт G603 600*300*18 полировка
+                        </div>
+                        <a href="#" class="card-detail__modal-del">
+                          <svg
+                            width="18"
+                            height="20"
+                            viewBox="0 0 18 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M3.26875 19.7125C2.71042 19.7125 2.23417 19.5158 1.84 19.1225C1.44667 18.7292 1.25 18.2529 1.25 17.6938V2.2125H0V0.9625H5V0H12.5V0.9625H17.5V2.2125H16.25V17.6938C16.25 18.2688 16.0575 18.7488 15.6725 19.1338C15.2867 19.5196 14.8063 19.7125 14.2313 19.7125H3.26875ZM15 2.2125H2.5V17.6938C2.5 17.9179 2.57208 18.1021 2.71625 18.2463C2.86042 18.3904 3.04458 18.4625 3.26875 18.4625H14.2313C14.4229 18.4625 14.5992 18.3825 14.76 18.2225C14.92 18.0617 15 17.8854 15 17.6938V2.2125ZM6.01 15.9625H7.26V4.7125H6.01V15.9625ZM10.24 15.9625H11.49V4.7125H10.24V15.9625Z"
+                              fill="#333333"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                      <div
+                        class="w-100 d-flex justify-content-between align-items-center"
+                      >
+                        <div class="card-detail__modal-price d-none d-md-block">
+                          3 970 ₽ за м²
+                        </div>
+                        <div class="d-flex align-items-center gap-5">
+                          <div
+                            class="d-flex gap-1 gap-lg-3 align-items-center card-detail__modal-count"
+                          >
+                            <a href="">
+                              <svg
+                                width="15"
+                                height="3"
+                                viewBox="0 0 15 3"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M15 3H0V0H15V3Z" fill="#333333" />
+                              </svg>
+                            </a>
+                            <input
+                              type="number"
+                              class="form-control"
+                              value="1"
+                            />
+
+                            <a href="">
+                              <svg
+                                width="15"
+                                height="14"
+                                viewBox="0 0 15 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M15 8H8.57143V14H6.42857V8H0V6H6.42857V0H8.57143V6H15V8Z"
+                                  fill="#333333"
+                                />
+                              </svg>
+                            </a>
+                          </div>
+                          <div class="card-detail__modal-general-price">
+                            3 970 ₽
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-detail__modal-itog">
+                <div class="row">
+                  <div class="col-12 text-end">
+                    Итого: <span>4 576 ₽ </span>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <div
+                      class="w-100 d-flex justify-content-between justify-content-lg-end gap-3 flex-column-reverse flex-md-row"
+                    >
+                      <button class="btn btn_min btn_card-detail">
+                        Оформить заказ
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
