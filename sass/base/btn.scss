@@ -95,3 +95,23 @@
     max-width: 100%;
   }
 }
+
+.btn_cart {
+  width: 100%;
+  display: flex;
+  background-color: #6558fb;
+  color: white;
+
+  &:hover {
+    background-color: #4738ea;
+    color: white;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: 200px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}
