@@ -272,142 +272,149 @@
           <div class="col-12">
             <div class="breadcrumps__elem">
               <a class="link link_grey" href="#">Главная</a> |
-              <a class="link link_grey" href="#">Каталог</a> | Карточка товара
+              <a class="link link_grey" href="./cart.html">Корзина</a> |
+              Оформление заказа
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="card-detail">
+    <section class="cart mb-5">
       <div class="container">
-        <div class="row">
+        <div class="row gx-lg-5 gy-4">
           <div class="col-12">
-            <div class="card-detail__wrap">
-              <div class="row justify-content-between gy-4">
-                <div class="col-xl-4 col-md-4 col-12">
-                  <div class="d-flex flex-column card-detail__image gap-1">
-                    <h2 class="d-block d-md-none">Название товара</h2>
-                    <div class="card-detail__main-img">
-                      <img class="w-100" src="./img/card.png" alt="" />
+            <h1>Оформление заказа</h1>
+          </div>
+          <div class="col-lg-6 col-12">
+            <form action="">
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Имя</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Введите имя"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Телефон</label
+                    >
+                    <input
+                      type="phone"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="+7 (812) 123-45-67"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Комментарий</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="btn btn_send">Отправить</a>
+            </form>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="d-flex flex-column gap-3 order-goods">
+              <div class="d-flex justify-content-between gap-3">
+                <div class="order-goods__title">Товары в заказе:</div>
+
+                <a class="order-goods__edit" href="./cart.html"
+                  >Редактировать</a
+                >
+              </div>
+              <div class="order-goods__wrap">
+                <div class="order-goods__elem">
+                  <div class="row">
+                    <div class="col-3 col-sm-2">
+                      <img
+                        src="./img/sale/1.png"
+                        alt=""
+                        class="order-goods__img"
+                      />
                     </div>
-                    <div class="d-none d-md-flex justify-content-between gap-3">
-                      <img class="w-100" src="./img/card-min.png" alt="" />
-                      <img class="w-100" src="./img/card-min.png" alt="" />
-                      <img
-                        class="w-100 d-none d-lg-block"
-                        src="./img/card-min.png"
-                        alt=""
-                      />
-                      <img
-                        class="w-100 d-none d-xl-block"
-                        src="./img/card-min.png"
-                        alt=""
-                      />
+                    <div class="col-9 col-sm-10">
+                      <div
+                        class="h-100 d-flex flex-column justify-content-between gap-2"
+                      >
+                        <div class="order-goods__elem-title">
+                          Гранитная брусчатка Тан Браун 100*100*40
+                          термообработка
+                        </div>
+                        <div
+                          class="d-flex gap-2 justify-content-between align-items-center order-goods__info"
+                        >
+                          <div class="order-goods__elem-count">50 м2</div>
+                          <div class="order-goods__elem-price">
+                            100 000 000 ₽
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-7 col-md-8 col-12">
-                  <div
-                    class="h-100 d-flex flex-column justify-content-between card-detail__main-info"
-                  >
-                    <h2 class="d-none d-md-block">Название товара</h2>
-                    <div class="card-detail__short-info">
-                      <p>Доступные размеры:</p>
-                      <ul class="card-detail__list">
-                        <li>100х100х50;</li>
-                        <li>100х100х80;</li>
-                        <li>100х100х100;</li>
-                      </ul>
-                      <p>
-                        Цена гранитной брусчатки Габбро Диабаз зависит от объема
-                        и рассчитывается индивидуально. Габбро гранит хорошо
-                        поддается обработке, полировка позволяет добиться
-                        идеального зеркального блеска, при этом свойство
-                        сохраняется надолго.
-                      </p>
+                <div class="order-goods__elem">
+                  <div class="row">
+                    <div class="col-3 col-sm-2">
+                      <img
+                        src="./img/sale/2.png"
+                        alt=""
+                        class="order-goods__img"
+                      />
                     </div>
-                    <div class="d-flex flex-column gap-3">
-                      <div class="card-detail__price">2 100 ₽/м</div>
+                    <div class="col-9 col-sm-10">
                       <div
-                        class="d-flex gap-xl-3 gap-3 flex-column flex-md-row"
+                        class="h-100 d-flex flex-column justify-content-between gap-2"
                       >
-                        <button
-                          class="btn btn_min btn_card-detail btn_card-detail-add"
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
+                        <div class="order-goods__elem-title">
+                          Гранитная брусчатка Тан Браун 100*100*40
+                          термообработка
+                        </div>
+                        <div
+                          class="d-flex gap-2 justify-content-between align-items-center order-goods__info"
                         >
-                          Заказать
-                        </button>
-
-                        <button
-                          class="btn btn_min btn_card-detail"
-                          type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal2"
-                        >
-                          В корзину
-                        </button>
+                          <div class="order-goods__elem-count">50 м2</div>
+                          <div class="order-goods__elem-price">
+                            100 000 000 ₽
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-4">
-          <div class="col-12">
-            <div class="card-detail__wrap">
-              <h3>Описание</h3>
-              <div class="card-detail__line"></div>
-              <div class="card-detail__info">
-                <p>
-                  Цвет Габбро от темно-серого до черного, однородный, крайне
-                  редко встречаются вкрапления и прожилки, структура камня
-                  мелкозернистая.
-                </p>
-                <p>
-                  Гранитная брусчатка Габбро Диабаз высоко ценится как за
-                  физико-механические свойства, так и за эффектный внешний вид.
-                  Широко применяется для изготовления различных изделий:
-                </p>
-                <ul class="card-detail__list">
-                  <li>Плиты для мощения и облицовки;</li>
-                  <li>Колотая и пиленая брусчатка;</li>
-                  <li>В интерьерах жилых и общественных помещений;</li>
-                  <li>
-                    Лестницы и балясины, ступени, колонны и многое другое.
-                  </li>
-                </ul>
-                <p>
-                  Габбро гранит хорошо поддается обработке, полировка позволяет
-                  добиться идеального зеркального блеска, при этом свойство
-                  сохраняется надолго. Стоек к истираемости и различным внешним
-                  воздействиям.
-                </p>
-                <p><b>ФИЗИКО-МЕХАНИЧЕСКИЕ СВОЙСТВА:</b></p>
-                <ul class="card-detail__list">
-                  <li><b>Объемный вес</b> кг/м3 — 3060;</li>
-                  <li><b>Водопоглощение %</b> — 0,15;</li>
-                  <li><b>Пористость %</b> — 1,0;</li>
-                  <li><b>Истираемость г/см2</b> — 0,32;</li>
-                  <li><b>Морозостойкость цикло</b> — F100;</li>
-                  <li>
-                    <b>Предел прочности при сжатии в сухом состоянии МПа</b> —
-                    259;
-                  </li>
-                  <li>
-                    <b
-                      >Предел прочности при сжатии в водонасыщенном состоянии
-                      МПа</b
-                    >
-                    — 199;
-                  </li>
-                  <li><b>Солестойкость %</b> — менее 5;</li>
-                  <li><b>Сопротивление удару см</b> — не менее 50;</li>
-                  <li>I класс радиоактивности.</li>
-                </ul>
+              <div class="d-flex justify-content-between order-goods__result">
+                <div class="order-goods__itog">Итого:</div>
+                <div class="order-goods__general-price">100 000 000 ₽</div>
               </div>
             </div>
           </div>
@@ -415,182 +422,6 @@
       </div>
     </section>
 
-    <section class="carousel">
-      <div class="container">
-        <h2>Популярные товары</h2>
-
-        <div class="carousel-slider">
-          <div>
-            <a class="carousel__item" href="#">
-              <img src="./img/catousel.png" alt="" class="carousel__item-img" />
-              <p class="carousel__item-title">Название товара</p>
-              <div class="carousel__item-price">
-                <span class="carousel__item-price-through">от 1000 руб</span>
-                <span
-                  class="carousel__item-price-main carousel__item-price-main_sale"
-                  >от 999 руб м2</span
-                >
-              </div>
-              <button
-                class="btn btn-primary carousel__item-btn carousel__item-btn_sale"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Заказать
-              </button>
-            </a>
-          </div>
-          <div>
-            <a class="carousel__item" href="#">
-              <img src="./img/catousel.png" alt="" class="carousel__item-img" />
-              <p class="carousel__item-title">Название товара</p>
-              <div class="carousel__item-price">
-                <span class="carousel__item-price-through">от 1000 руб</span>
-                <span
-                  class="carousel__item-price-main carousel__item-price-main_sale"
-                  >от 999 руб м2</span
-                >
-              </div>
-              <button
-                class="btn btn-primary carousel__item-btn carousel__item-btn_sale"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Заказать
-              </button>
-            </a>
-          </div>
-          <div>
-            <a class="carousel__item" href="#">
-              <img src="./img/catousel.png" alt="" class="carousel__item-img" />
-              <p class="carousel__item-title">Название товара</p>
-              <div class="carousel__item-price">
-                <span class="carousel__item-price-through">от 1000 руб</span>
-                <span
-                  class="carousel__item-price-main carousel__item-price-main_sale"
-                  >от 999 руб м2</span
-                >
-              </div>
-              <button
-                class="btn btn-primary carousel__item-btn carousel__item-btn_sale"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Заказать
-              </button>
-            </a>
-          </div>
-          <div>
-            <a class="carousel__item" href="#">
-              <img src="./img/catousel.png" alt="" class="carousel__item-img" />
-              <p class="carousel__item-title">Название товара</p>
-              <div class="carousel__item-price">
-                <span class="carousel__item-price-through">от 1000 руб</span>
-                <span
-                  class="carousel__item-price-main carousel__item-price-main_sale"
-                  >от 999 руб м2</span
-                >
-              </div>
-              <button
-                class="btn btn-primary carousel__item-btn carousel__item-btn_sale"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Заказать
-              </button>
-            </a>
-          </div>
-          <div>
-            <a class="carousel__item" href="#">
-              <img src="./img/catousel.png" alt="" class="carousel__item-img" />
-              <p class="carousel__item-title">Название товара</p>
-              <div class="carousel__item-price">
-                <span class="carousel__item-price-through">от 1000 руб</span>
-                <span
-                  class="carousel__item-price-main carousel__item-price-main_sale"
-                  >от 999 руб м2</span
-                >
-              </div>
-              <button
-                class="btn btn-primary carousel__item-btn carousel__item-btn_sale"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Заказать
-              </button>
-            </a>
-          </div>
-          <div>
-            <a class="carousel__item" href="#">
-              <img src="./img/catousel.png" alt="" class="carousel__item-img" />
-              <p class="carousel__item-title">Название товара</p>
-              <div class="carousel__item-price">
-                <span class="carousel__item-price-through">от 1000 руб</span>
-                <span
-                  class="carousel__item-price-main carousel__item-price-main_sale"
-                  >от 999 руб м2</span
-                >
-              </div>
-              <button
-                class="btn btn-primary carousel__item-btn carousel__item-btn_sale"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Заказать
-              </button>
-            </a>
-          </div>
-          <div>
-            <a class="carousel__item" href="#">
-              <img src="./img/catousel.png" alt="" class="carousel__item-img" />
-              <p class="carousel__item-title">Название товара</p>
-              <div class="carousel__item-price">
-                <span class="carousel__item-price-through">от 1000 руб</span>
-                <span
-                  class="carousel__item-price-main carousel__item-price-main_sale"
-                  >от 999 руб м2</span
-                >
-              </div>
-              <button
-                class="btn btn-primary carousel__item-btn carousel__item-btn_sale"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Заказать
-              </button>
-            </a>
-          </div>
-          <div>
-            <a class="carousel__item" href="#">
-              <img src="./img/catousel.png" alt="" class="carousel__item-img" />
-              <p class="carousel__item-title">Название товара</p>
-              <div class="carousel__item-price">
-                <span class="carousel__item-price-through">от 1000 руб</span>
-                <span
-                  class="carousel__item-price-main carousel__item-price-main_sale"
-                  >от 999 руб м2</span
-                >
-              </div>
-              <button
-                class="btn btn-primary carousel__item-btn carousel__item-btn_sale"
-                type="button"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
-              >
-                Заказать
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
     <footer class="footer">
       <div class="container">
         <div class="row gy-5">
@@ -950,183 +781,8 @@
         </div>
       </div>
     </div>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Купить в 1 клик</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="d-flex gap-2">
-              <img class="modal__img" src="./img/sale/1.png" alt="" />
-              <div class="modal__info d-flex flex-column">
-                <div class="modal__title">
-                  Гранитная брусчатка Тан Браун 100*100*60 термообработка
-                </div>
-              </div>
-            </div>
-            <div class="modal__form mt-4">
-              <form action="">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Имя</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="Введите имя"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="mb-3">
-                      <label for="exampleFormControlInput1" class="form-label"
-                        >Телефон</label
-                      >
-                      <input
-                        type="phone"
-                        class="form-control"
-                        id="exampleFormControlInput1"
-                        placeholder="+7 (812) 123-45-67"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="mb-3">
-                      <label
-                        for="exampleFormControlTextarea1"
-                        class="form-label"
-                        >Комментарий</label
-                      >
-                      <textarea
-                        class="form-control"
-                        id="exampleFormControlTextarea1"
-                        rows="3"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <a href="#" class="btn btn_send">Отправить</a>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal2"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Корзина</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body card-detail__modal">
-            <div class="card-detail__modal-goods">
-              <div class="cart__elem">
-                <div class="row">
-                  <div class="col-2">
-                    <div class="cart__elem-img">
-                      <img src="./img/sale/2.png" alt="" />
-                    </div>
-                  </div>
-                  <div
-                    class="col-10 d-flex flex-column justify-content-between gap-3"
-                  >
-                    <div class="cart__elem-info">
-                      <div class="cart__elem-title">
-                        Гранитная брусчатка Тан Браун 100*100*40 термообработка
-                      </div>
-                      <div class="cart__elem-del">Удалить</div>
-                    </div>
-                    <div class="cart__elem-manage">
-                      <div
-                        class="d-flex gap-1 gap-lg-3 align-items-center card-detail__modal-count"
-                      >
-                        <a href="">
-                          <svg
-                            width="15"
-                            height="3"
-                            viewBox="0 0 15 3"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M15 3H0V0H15V3Z" fill="#333333" />
-                          </svg>
-                        </a>
-                        <input type="number" class="form-control" value="1" />
-
-                        <a href="">
-                          <svg
-                            width="15"
-                            height="14"
-                            viewBox="0 0 15 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M15 8H8.57143V14H6.42857V8H0V6H6.42857V0H8.57143V6H15V8Z"
-                              fill="#333333"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="cart__elem-price">100 000 100 ₽/м</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card-detail__modal-itog">
-                <div class="row">
-                  <div class="col-12 text-end">
-                    Итого: <span>4 576 ₽ </span>
-                  </div>
-                  <div class="col-12 mt-4">
-                    <div
-                      class="w-100 d-flex justify-content-between justify-content-lg-end gap-3 flex-column-reverse flex-md-row"
-                    >
-                      <button class="btn btn_min btn_card-detail">
-                        Оформить заказ
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script
+    <!-- <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
@@ -1135,7 +791,7 @@
       src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
     ></script>
     <script type="text/javascript" src="./script/slick.min.js"></script>
-    <script type="text/javascript" src="./script/slick.manage.js"></script>
+    <script type="text/javascript" src="./script/slick.manage.js"></script> -->
     <script src="./script/bootstrap.min.js"></script>
     <script src="./script/burger.js"></script>
   </body>
