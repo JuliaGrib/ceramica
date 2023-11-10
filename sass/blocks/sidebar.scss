@@ -1,0 +1,43 @@
+.sidebar {
+  &__list {
+    background-color: #e6eded;
+    border-radius: 6px;
+    border: 0.8px solid #dee2e6;
+  }
+  &__link {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    transition: $transition-s;
+
+    &:hover {
+      background-color: #d6e6e6;
+      color: black;
+    }
+  }
+
+  &__elem {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__elem:last-child {
+    &::after {
+      height: 0px;
+    }
+  }
+
+  &__link_current {
+    background-color: #f1f3f3;
+  }
+}
