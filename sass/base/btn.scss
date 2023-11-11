@@ -3,10 +3,43 @@
   align-items: center;
   justify-content: center;
   padding: 10px 0;
+  border-radius: $border-radius;
+  transition: $transition-s;
+}
+
+.btn_primary {
+  border: 1px solid $secondary-color;
+  background-color: $white-color;
+  color: $secondary-color;
 
   &:hover {
-    border-color: rgba(255, 255, 255, 0);
+    background-color: $secondary-color;
+    color: $white-color;
   }
+}
+
+.btn_secondary {
+  background-color: $secondary-color;
+  color: $white-color;
+
+  &:hover {
+    background-color: $secondary-color-dark;
+  }
+}
+
+.btn_sale {
+  border: 1px solid $red-color;
+  background-color: $white-color;
+  color: $red-color;
+
+  &:hover {
+    background-color: $red-color;
+    color: $white-color;
+  }
+}
+
+.btn_max {
+  width: 100%;
 }
 
 .btn_white {
@@ -39,15 +72,6 @@
     color: white;
   }
 }
-
-// .btn_send {
-//   background-color: rgba(185, 205, 206, 0.36);
-
-//   &:hover {
-//     color: white;
-//     background-color: #6558fb;
-//   }
-// }
 
 .btn_card {
   background-color: white;

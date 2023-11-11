@@ -90,12 +90,12 @@
       }
     }
 
-    &:hover .carousel__item-btn {
-      background-color: #6558fb;
-      color: white;
+    &:hover .btn_primary {
+      background-color: $secondary-color;
+      color: $white-color;
     }
 
-    &:hover .carousel__item-btn_sale {
+    &:hover .btn_sale {
       background-color: red;
       color: white;
     }

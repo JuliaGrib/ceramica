@@ -1,18 +1,18 @@
 .sidebar {
   &__list {
-    background-color: #e6eded;
-    border-radius: 6px;
-    border: 0.8px solid #dee2e6;
+    background-color: $main-color;
+    border-radius: $border-radius;
+    border: $border-grey;
   }
   &__link {
     display: block;
     width: 100%;
-    padding: 1rem;
+    padding: $padding;
     transition: $transition-s;
 
     &:hover {
-      background-color: #d6e6e6;
-      color: black;
+      background-color: $main-color-dark;
+      color: $black-color;
     }
   }
 
@@ -38,6 +38,6 @@
   }
 
   &__link_current {
-    background-color: #f1f3f3;
+    background-color: $white-color;
   }
 }
