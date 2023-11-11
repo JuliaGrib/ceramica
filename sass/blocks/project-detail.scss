@@ -1,0 +1,36 @@
+.project-detail {
+  padding-bottom: $padding-section;
+
+  &__info,
+  &__text {
+    padding: $padding;
+    border: $border-grey;
+    border-radius: $border-radius;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__galery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
