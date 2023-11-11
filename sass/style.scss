@@ -1,6 +1,8 @@
 @import 'base/variables.scss';
+@import 'base/link.scss';
 @import 'base/btn.scss';
 @import 'blocks/main.scss';
+@import 'blocks/page-title.scss';
 @import 'blocks/social.scss';
 @import 'blocks/slick.scss';
 @import 'blocks/pagination.scss';
@@ -23,3 +25,5 @@
 @import 'blocks/sidebar.scss';
 @import 'blocks/sale-page.scss';
 @import 'blocks/sale-detail.scss';
+@import 'blocks/info.scss';
+@import 'blocks/contact.scss';

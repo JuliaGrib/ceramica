@@ -5,8 +5,12 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
-  transition: $transition-s;
+  color: $black-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $black-color;
+  }
 }
 
 ul {
@@ -27,13 +31,4 @@ h2 {
 
 .overflow {
   overflow: hidden;
-}
-
-.link_grey {
-  color: $light-grey;
-  transition: $transition-s;
-
-  &:hover {
-    color: $secondary-color;
-  }
 }

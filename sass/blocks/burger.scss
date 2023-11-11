@@ -134,8 +134,8 @@
       display: block;
       position: absolute;
       width: 100%;
-      height: 1px;
-      background-color: #e6eded;
+      height: 0.8px;
+      background-color: #dee2e6;
       bottom: 0;
     }
   }
@@ -176,13 +176,13 @@
 }
 
 .burger-menu .accordion-button {
-  padding: 15px 15px;
+  padding: $padding $padding;
   font-size: 18px;
 }
 .burger-menu .accordion-button:not(.collapsed) {
   background-color: #e6eded;
   color: black;
-  padding: 15px 15px;
+  padding: $padding $padding;
 }
 
 .burger-menu .accordion-button:not(.collapsed)::after {

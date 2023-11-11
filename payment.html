@@ -271,7 +271,10 @@
         <div class="row">
           <div class="col-12">
             <div class="breadcrumps__elem">
-              <a class="link link_grey" href="#">Главная</a> | Корзина
+              <a class="link link_grey link_small" href="./index.html"
+                >Главная</a
+              >
+              | Оплата
             </div>
           </div>
         </div>
@@ -279,132 +282,96 @@
     </div>
     <div class="page-title">
       <div class="container">
-        <h1>Корзина</h1>
+        <h1>Оплата</h1>
       </div>
     </div>
-    <section class="cart mb-5">
+    <section class="info">
       <div class="container">
-        <div class="row gx-lg-5 gy-2">
-          <div class="col-lg-8 col-12">
-            <div class="cart__wrap">
-              <div class="cart__elem">
-                <div class="row">
-                  <div class="col-2">
-                    <div class="cart__elem-img">
-                      <img src="./img/sale/1.png" alt="" />
-                    </div>
-                  </div>
-                  <div
-                    class="col-10 d-flex flex-column justify-content-between gap-3"
-                  >
-                    <div class="cart__elem-info">
-                      <div class="cart__elem-title">
-                        Гранитная брусчатка Тан Браун 100*100*40 термообработка
-                      </div>
-                      <div class="cart__elem-del">Удалить</div>
-                    </div>
-                    <div class="cart__elem-manage">
-                      <div
-                        class="d-flex gap-1 gap-lg-3 align-items-center card-detail__modal-count"
-                      >
-                        <a href="">
-                          <svg
-                            width="15"
-                            height="3"
-                            viewBox="0 0 15 3"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M15 3H0V0H15V3Z" fill="#333333" />
-                          </svg>
-                        </a>
-                        <input type="number" class="form-control" value="1" />
-
-                        <a href="">
-                          <svg
-                            width="15"
-                            height="14"
-                            viewBox="0 0 15 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M15 8H8.57143V14H6.42857V8H0V6H6.42857V0H8.57143V6H15V8Z"
-                              fill="#333333"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="cart__elem-price">100 000 100 ₽/м</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="cart__elem">
-                <div class="row">
-                  <div class="col-2">
-                    <div class="cart__elem-img">
-                      <img src="./img/sale/2.png" alt="" />
-                    </div>
-                  </div>
-                  <div
-                    class="col-10 d-flex flex-column justify-content-between gap-3"
-                  >
-                    <div class="cart__elem-info">
-                      <div class="cart__elem-title">
-                        Гранитная брусчатка Тан Браун 100*100*40 термообработка
-                      </div>
-                      <div class="cart__elem-del">Удалить</div>
-                    </div>
-                    <div class="cart__elem-manage">
-                      <div
-                        class="d-flex gap-1 gap-lg-3 align-items-center card-detail__modal-count"
-                      >
-                        <a href="">
-                          <svg
-                            width="15"
-                            height="3"
-                            viewBox="0 0 15 3"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M15 3H0V0H15V3Z" fill="#333333" />
-                          </svg>
-                        </a>
-                        <input type="number" class="form-control" value="1" />
-
-                        <a href="">
-                          <svg
-                            width="15"
-                            height="14"
-                            viewBox="0 0 15 14"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M15 8H8.57143V14H6.42857V8H0V6H6.42857V0H8.57143V6H15V8Z"
-                              fill="#333333"
-                            />
-                          </svg>
-                        </a>
-                      </div>
-                      <div class="cart__elem-price">100 000 100 ₽/м</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="row gy-2">
+          <div class="col-lg-3 d-none d-lg-block">
+            <aside class="sidebar">
+              <ul class="sidebar__list">
+                <li class="sidebar__elem">
+                  <a href="#" class="sidebar__link"> О нас </a>
+                </li>
+                <li class="sidebar__elem">
+                  <a href="#" class="sidebar__link"> Доставка </a>
+                </li>
+                <li class="sidebar__elem">
+                  <a href="#" class="sidebar__link sidebar__link_current">
+                    Оплата
+                  </a>
+                </li>
+                <li class="sidebar__elem">
+                  <a href="#" class="sidebar__link"> Проекты </a>
+                </li>
+                <li class="sidebar__elem">
+                  <a href="#" class="sidebar__link"> Акции </a>
+                </li>
+                <li class="sidebar__elem">
+                  <a href="#" class="sidebar__link"> Контакты </a>
+                </li>
+              </ul>
+            </aside>
           </div>
-          <div class="col-lg-4 col-12">
-            <div class="d-flex flex-column gap-4 result">
-              <div class="d-flex justify-content-between gap-3">
-                <div class="result__title">Итого:</div>
-
-                <div class="result__price">200 000 100 ₽/м</div>
-              </div>
-
-              <div class="d-flex justify-content-end">
-                <a href="./order.html" class="btn btn_cart">Оформить заказ</a>
+          <div class="col-lg-9 col-12">
+            <div class="d-flex flex-column gap-4">
+              <img
+                src="./img/sale/payment.png"
+                alt=""
+                class="w-100 info__banner"
+              />
+              <div class="info__text">
+                <h4>Как оплачивать заказ</h4>
+                <p>
+                  Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                  вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+                  текстов на латинице с начала XVI века. В то время некий
+                  безымянный печатник создал большую коллекцию размеров и форм
+                  шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem
+                  Ipsum не только успешно пережил без заметных изменений пять
+                  веков, но и перешагнул в электронный дизайн. Его популяризации
+                  в новое время послужили публикация листов Letraset с образцами
+                  Lorem Ipsum в 60-х годах и, в более недавнее время, программы
+                  электронной вёрстки типа Aldus PageMaker, в шаблонах которых
+                  используется Lorem Ipsum.
+                </p>
+                <h4>Почему он используется?</h4>
+                <p>
+                  Давно выяснено, что при оценке дизайна и композиции читаемый
+                  текст мешает сосредоточиться. Lorem Ipsum используют потому,
+                  что тот обеспечивает более или менее стандартное заполнение
+                  шаблона, а также реальное распределение букв и пробелов в
+                  абзацах, которое не получается при простой дубликации "Здесь
+                  ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие
+                  программы электронной вёрстки и редакторы HTML используют
+                  Lorem Ipsum в качестве текста по умолчанию, так что поиск по
+                  ключевым словам "lorem ipsum" сразу показывает, как много
+                  веб-страниц всё ещё дожидаются своего настоящего рождения. За
+                  прошедшие годы текст Lorem Ipsum получил много версий.
+                  Некоторые версии появились по ошибке, некоторые - намеренно
+                  (например, юмористические варианты).
+                </p>
+                <h4>Откуда он появился?</h4>
+                <p>
+                  Многие думают, что Lorem Ipsum - взятый с потолка
+                  псевдо-латинский набор слов, но это не совсем так. Его корни
+                  уходят в один фрагмент классической латыни 45 года н.э., то
+                  есть более двух тысячелетий назад. Ричард МакКлинток,
+                  профессор латыни из колледжа Hampden-Sydney, штат Вирджиния,
+                  взял одно из самых странных слов в Lorem Ipsum, "consectetur",
+                  и занялся его поисками в классической латинской литературе. В
+                  результате он нашёл неоспоримый первоисточник Lorem Ipsum в
+                  разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et
+                  Malorum" ("О пределах добра и зла"), написанной Цицероном в 45
+                  году н.э. Этот трактат по теории этики был очень популярен в
+                  эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum
+                  dolor sit amet..", происходит от одной из строк в разделе
+                  1.10.32 Классический текст Lorem Ipsum, используемый с XVI
+                  века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de
+                  Finibus Bonorum et Malorum" Цицерона и их английский перевод,
+                  сделанный H. Rackham, 1914 год.
+                </p>
               </div>
             </div>
           </div>
@@ -771,7 +738,96 @@
         </div>
       </div>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Купить в 1 клик</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex gap-2">
+              <img class="modal__img" src="./img/sale/1.png" alt="" />
+              <div class="modal__info d-flex flex-column">
+                <div class="modal__title">
+                  Гранитная брусчатка Тан Браун 100*100*60 термообработка
+                </div>
+              </div>
+            </div>
+            <div class="modal__form mt-4">
+              <form action="">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Имя</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="Введите имя"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label"
+                        >Телефон</label
+                      >
+                      <input
+                        type="phone"
+                        class="form-control"
+                        id="exampleFormControlInput1"
+                        placeholder="+7 (812) 123-45-67"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlTextarea1"
+                        class="form-label"
+                        >Комментарий</label
+                      >
+                      <textarea
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="btn btn_send">Отправить</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./script/slick.min.js"></script>
+    <script type="text/javascript" src="./script/slick.manage.js"></script>
     <script src="./script/bootstrap.min.js"></script>
     <script src="./script/burger.js"></script>
   </body>

@@ -1,0 +1,29 @@
+.link {
+  text-decoration: none;
+  transition: $transition-s;
+
+  &_default {
+    color: black;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &_grey {
+    color: $light-grey;
+  }
+
+  &_small {
+    font-size: $font-size-s;
+  }
+}
+
+// .link_grey {
+//   color: $light-grey;
+//   transition: $transition-s;
+
+//   &:hover {
+//     color: $secondary-color;
+//   }
+// }
