@@ -39,4 +39,13 @@
       color: $secondary-color;
     }
   }
+
+  &__menu {
+    a {
+      transition: $transition-s;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
 }
