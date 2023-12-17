@@ -1,1 +1,0 @@
-.banner-slider{position:relative}.banner-next,.banner-prev{position:absolute;top:50%;transform:translateY(-50%);z-index:1;cursor:pointer;transition:.4s}.banner-next:hover,.banner-prev:hover{color:#6558fb}.banner-prev{left:20px}.banner-next{right:20px}
