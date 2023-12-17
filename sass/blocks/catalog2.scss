@@ -8,6 +8,13 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.05);
+  border-radius: 8px;
+
+  &:hover {
+    box-shadow: 0 5px 10px 2px rgba(34, 60, 80, 0.2);
+    border-radius: 8px;
+  }
 
   &__img {
     display: flex;
@@ -26,7 +33,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
 
   &__title {
@@ -58,7 +65,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 0 20px;
+    padding: 0 20px 20px;
   }
 
   &__title {
