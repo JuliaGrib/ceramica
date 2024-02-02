@@ -1,0 +1,39 @@
+.also {
+  padding: 0px 0 100px 0;
+
+  @media screen and (max-width: 991px) {
+    padding: 0 0 70px 0;
+  }
+  h2 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  &__about {
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap;
+    height: 100%;
+  }
+
+  &__img {
+    width: 100%;
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+    }
+  }
+}

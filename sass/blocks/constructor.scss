@@ -1,0 +1,107 @@
+.constructor {
+  padding: 100px 0;
+
+  @media screen and (max-width: 991px) {
+    padding: 70px 0;
+  }
+
+  h4,
+  h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+    position: sticky;
+    top: 30px;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 6px;
+
+      @media screen and (max-width: 767px) {
+        width: 60%;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 580px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &__model {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+
+    &-elem {
+      padding: 12px 16px;
+      border-radius: 6px;
+      transition: 0.4s;
+      font-size: 14px;
+      font-weight: 600;
+      background-color: $main-grey;
+      cursor: pointer;
+
+      &_active {
+        background-color: #ffd707;
+      }
+    }
+  }
+
+  &__color {
+    &-elem {
+      display: none;
+
+      &_active {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $gap;
+      }
+    }
+  }
+
+  &-color {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2.5px solid $main-grey;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &_active {
+      border: 2.5px solid #ffd707;
+    }
+
+    img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+
+      @media screen and (max-width: 991px) {
+        width: 80px;
+        height: 60px;
+      }
+    }
+    div {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
+  &__dop {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+
+.constructor-total-model,
+.constructor-total-color {
+  font-weight: 600;
+}

@@ -1,25 +1,60 @@
-.banner-slider {
-  position: relative;
-}
+.banner {
+  background-image: url(../img/bg-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 
-.banner-prev,
-.banner-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
-  cursor: pointer;
-  transition: $transition-s;
+  &__content {
+    padding: 230px 0 170px;
 
-  &:hover {
-    color: $secondary-color;
+    @media screen and (max-width: 991px) {
+      padding: 130px 0 100px;
+    }
   }
-}
 
-.banner-prev {
-  left: 20px;
-}
+  &__headers {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.banner-next {
-  right: 20px;
+  .line {
+    margin: 0 auto;
+    width: 1.5px;
+    height: 100%;
+    background-color: white;
+
+    @media screen and (max-width: 991px) {
+      width: 100%;
+      height: 1px;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+    }
+  }
+
+  h2 {
+    // font-size: 40px;
+    // font-style: normal;
+    // font-weight: 600;
+
+    // @media screen and (max-width: 991px) {
+    //   font-size: 25px;
+    //   font-weight: 400;
+    // }
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+
+    @media screen and (max-width: 991px) {
+      font-size: 30px;
+    }
+  }
 }

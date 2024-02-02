@@ -1,51 +1,25 @@
 .footer {
-  padding: 60px 0;
-  background-color: rgba(185, 205, 206, 0.36);
+  background-color: $main-grey;
+  padding: 100px 0;
 
-  @media screen and (max-width: 575px) {
-    padding: 60px 60px;
+  @media screen and (max-width: 991px) {
+    padding: 70px 0;
   }
 
-  .header__menu-social {
-    padding: 0;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xs;
   }
 
-  &__contact-adress {
-    max-width: 440px;
-  }
-
-  &__contact-elem {
-    svg {
-      color: $black-color;
-      transition: $transition-s;
-    }
-    &:hover svg {
-      color: $secondary-color;
-    }
-  }
-
-  &__adress {
-    display: grid;
-    grid-template-columns: 1fr auto;
+  &__wrap-elem {
+    display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: $gap-s;
 
-    svg {
-      color: $black-color;
-      transition: $transition-s;
-      width: 26px;
-    }
-    &:hover svg {
-      color: $secondary-color;
-    }
-  }
-
-  &__menu {
     a {
-      transition: $transition-s;
-      &:hover {
-        color: $secondary-color;
-      }
+      color: $black-color;
+      text-decoration: none;
     }
   }
 }

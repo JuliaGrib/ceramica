@@ -1,224 +1,177 @@
-.burger {
+.burger-btn {
   position: relative;
+  z-index: 2000;
+  width: 25px;
+  height: 1.5px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s;
 
-  &__btn {
-    position: relative;
-    z-index: 100000;
-    display: block;
-    width: 26px;
-    height: 2px;
-    margin: 8px 0;
-    background-color: #333333;
-    cursor: pointer;
-    transition: 0.3s;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      display: block;
-      width: 26px;
-      height: 2px;
-      background-color: #333333;
-      transition: 0.6s;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 8px;
-      display: block;
-      width: 26px;
-      height: 2px;
-      background-color: #333333;
-      transition: 0.6s;
-    }
-    display: block;
-    width: 26px;
-    height: 2px;
-    margin: 8px 0;
-    background-color: #333333;
-    cursor: pointer;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    width: 25px;
+    height: 1.5px;
+    background-color: white;
     transition: 0.4s;
-
-    &::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      display: block;
-      width: 26px;
-      height: 2px;
-      background-color: #333333;
-    }
-
-    &::after {
-      content: '';
-      position: absolute;
-      top: 8px;
-      display: block;
-      width: 26px;
-      height: 2px;
-      background-color: #333333;
-    }
   }
 
-  &__btn_active {
-    background-color: #33333300;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    width: 25px;
+    height: 1.5px;
+    background-color: white;
+    transition: 0.4s;
+  }
+
+  &_active {
+    background-color: rgba($color: #000000, $alpha: 0);
 
     &::before {
       top: 0;
       transform: rotate(45deg);
+      background-color: $main-color;
     }
 
     &::after {
       top: 0;
       transform: rotate(-45deg);
+      background-color: $main-color;
     }
-  }
-}
-
-.burger-menu .container {
-  @media screen and (max-width: 560px) {
-    padding: 0;
   }
 }
 
 .burger-menu {
-  position: absolute;
-  z-index: 999;
-  top: -1000px;
-  left: 0;
-  width: 100%;
-  padding: 80px 0 0 0;
-  background: white;
-  height: 100vh;
-  background-color: #f0f0f0;
-  background-color: #e6eded;
-  transition: 0.6s;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  padding: 30px;
+  background-color: $main-grey;
+  transition: 0.8s;
+  overflow-y: scroll;
+
+  @media screen and (max-width: 991px) {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 475px) {
+    width: 80%;
+  }
+
+  @media screen and (max-width: 325px) {
+    width: 90%;
+  }
 
   &_active {
-    top: 0px;
-    overflow-y: scroll;
+    right: 0;
   }
 
   &__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: $gap-m;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
     li {
-      display: block;
-      padding: 15px 0px;
-      font-size: 18px;
-      position: relative;
-
-      &::before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 1px;
-        background-color: white;
-        bottom: 0;
-      }
-
-      &_first {
-        padding: 0 0 1px 0;
+      a {
+        text-decoration: none;
+        color: $black-color;
+        font-weight: 600;
       }
     }
-    a {
-      padding: 0 15px;
-    }
-  }
-
-  &__elem {
-    display: block;
-    padding: 15px 0px;
-    font-size: 18px;
-    position: relative;
-
-    &::before {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: white;
-      bottom: 0;
-    }
-
-    &_first {
-      padding: 0 0 1px 0;
-    }
-  }
-
-  &__elem-text {
-    padding: 0 15px;
-  }
-  &__subelem {
-    font-size: 16px;
-    padding: 13px 0;
-    position: relative;
 
     &::after {
       content: '';
-      display: block;
       position: absolute;
-      width: 100%;
-      height: 0.8px;
-      background-color: #dee2e6;
       bottom: 0;
+      display: block;
+      width: 100%;
+      height: 0.5px;
+      background-color: $black-color;
     }
   }
 
-  &__subelem-text {
-    padding: 0 0 0 35px;
+  &__contact {
+    padding-top: 10px;
+    font-size: 14px;
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__wrap-elem {
+    padding-bottom: 10px;
+
+    a {
+      color: $black-color;
+      text-decoration: none;
+    }
   }
 
   &__info {
-    font-size: 18px;
-    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
-.burger-menu .accordion {
-  background-color: #e6eded85;
-}
-.burger-menu .accordion,
-.burger-menu .accordion-item,
-.burger-menu #accordionFlushExample,
-.burger-menu .burger-menu__accordion {
-  background-color: #e6eded;
+.burger-close {
+  position: relative;
+  z-index: 2000;
+  width: 25px;
+  height: 1.5px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 1.5px;
+    top: 0;
+    transform: rotate(45deg);
+    background-color: $black-color;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 1.5px;
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: $black-color;
+  }
 }
 
-.burger-menu .accordion,
-.burger-menu .accordion-button {
-  background-color: #e6eded;
-}
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.5);
+  opacity: 0;
+  transition: 0.8s;
 
-.burger-menu .accordion-header {
-  padding: 0;
-  font-size: 18px;
-}
-
-.burger-menu .accordion-body {
-  background-color: white;
-  padding: 0;
-}
-
-.burger-menu .accordion-button {
-  padding: $padding $padding;
-  font-size: 18px;
-}
-.burger-menu .accordion-button:not(.collapsed) {
-  background-color: #e6eded;
-  color: black;
-  padding: $padding $padding;
-}
-
-.burger-menu .accordion-button:not(.collapsed)::after {
-  background-image: var(--bs-accordion-btn-icon);
-}
-
-.burger-menu .accordion-button:focus {
-  z-index: 3;
-  border-color: none;
-  outline: 0;
-  box-shadow: none;
+  &_active {
+    z-index: 3;
+    opacity: 1;
+  }
 }

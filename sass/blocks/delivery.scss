@@ -1,0 +1,21 @@
+.delivery {
+  &__wrap {
+    padding: 60px 60px;
+    background-color: $main-grey;
+    border-radius: $radius;
+
+    @media screen and (max-width: 576px) {
+      padding: 20px;
+    }
+  }
+
+  &__text {
+    color: $grey-color;
+  }
+
+  button {
+    @media screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,19 +1,11 @@
 .breadcrumbs {
-  margin: 16px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0 30px 0;
+  font-size: 14px;
 
-  &__elem {
-    font-size: 14px;
-    color: $light-grey;
-
-    a {
-      font-size: 14px;
-      color: rgba(0, 0, 0, 0.61);
-      text-decoration: none;
-      transition: 0.4s;
-
-      &:hover {
-        color: $secondary-color;
-      }
-    }
+  a {
+    color: black;
+    text-decoration: none;
   }
 }
